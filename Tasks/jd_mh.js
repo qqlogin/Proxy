@@ -12,17 +12,17 @@
 ============Quantumultx===============
 [task_local]
 #盲盒抽京豆
-1 7 * * * https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_mh.js, tag=盲盒抽京豆, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_mh.jpg, enabled=true
+1 7 * * * https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_mh.js, tag=盲盒抽京豆, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_mh.jpg, enabled=true
 
 ================Loon==============
 [Script]
-cron "1 7 * * *" script-path=https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_mh.js,tag=盲盒抽京豆
+cron "1 7 * * *" script-path=https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_mh.js,tag=盲盒抽京豆
 
 ===============Surge=================
-盲盒抽京豆 = type=cron,cronexp="1 7 * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_mh.js
+盲盒抽京豆 = type=cron,cronexp="1 7 * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_mh.js
 
 ============小火箭=========
-盲盒抽京豆 = type=cron,script-path=https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_mh.js, cronexpr="1 8,12,18* * *", timeout=200, enable=true
+盲盒抽京豆 = type=cron,script-path=https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_mh.js, cronexpr="1 8,12,18* * *", timeout=200, enable=true
  */
 const $ = new Env('盲盒抽京豆');
 const notify = $.isNode() ? require('./sendNotify') : '';

@@ -1,23 +1,23 @@
 /*
 半点红包雨
 活动时间：2021年1月20日-2021年2月5日每天12~23每个半点
-更新地址：https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_live_redrain_half.js
+更新地址：https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_live_redrain_half.js
 已支持IOS双京东账号, Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, 小火箭，JSBox, Node.js
 ============Quantumultx===============
 [task_local]
 #半点红包雨
-30,31 12-23/1 * * * https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_live_redrain_half.js, tag=半点红包雨, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_live_redrain_half.jpg, enabled=true
+30,31 12-23/1 * * * https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_live_redrain_half.js, tag=半点红包雨, img-url=https://raw.githubusercontent.com/yogayyy/Scripts/master/Icon/shylocks/jd_live_redrain_half.jpg, enabled=true
 
 ================Loon==============
 [Script]
-cron "30,31 12-23/1 * * *" script-path=https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_live_redrain_half.js, tag=半点红包雨
+cron "30,31 12-23/1 * * *" script-path=https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_live_redrain_half.js, tag=半点红包雨
 
 ===============Surge=================
-半点红包雨 = type=cron,cronexp="30,31 12-23/1 * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_live_redrain_half.js
+半点红包雨 = type=cron,cronexp="30,31 12-23/1 * * *",wake-system=1,timeout=200,script-path=https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_live_redrain_half.js
 
 ============小火箭=========
-半点红包雨 = type=cron,script-path=https://raw.githubusercontent.com/qqlogin/Proxy/main/Tasks/jd_live_redrain_half.js, cronexpr="30,31 12-23/1 * * *", timeout=200, enable=true
+半点红包雨 = type=cron,script-path=https://raw.githubusercontent.com/qqlogin/Proxy/master/Tasks/jd_live_redrain_half.js, cronexpr="30,31 12-23/1 * * *", timeout=200, enable=true
  */
 const $ = new Env('半点红包雨');
 
@@ -201,7 +201,7 @@ function receiveRedRain() {
 
 function getAuthorShareCode() {
   return new Promise(resolve => {
-    $.get({url: "https://gitee.com/shylocks/updateTeam/raw/main/jd_super.json",headers:{
+    $.get({url: "https://gitee.com/shylocks/updateTeam/raw/master/jd_super.json",headers:{
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"
       }}, async (err, resp, data) => {
       try {
